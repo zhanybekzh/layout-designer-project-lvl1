@@ -2,6 +2,24 @@
   margin: 0;
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: normal;
+  font-family: "Neucha", cursive;
+  line-height: 1.2em;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 34px;
+}
 
 body {
   color: #2a2626;
@@ -81,21 +99,17 @@ body {
   width: 100%;
   padding: 100px 0;
 }
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-  font-weight: normal;
-  font-family: "Neucha", cursive;
-  line-height: 1.2em;
+.definition {
+  width: 100%;
+  text-align: center;
 }
-h1 {
-  font-size: 72px;
+
+.definition__title {
+  margin-bottom: 30px;
 }
-h2 {
-  font-size: 60px;
+.definition__subtitle {
+  margin-bottom: 30px;
 }
-h3 {
-  font-size: 34px;
+.definition__video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
