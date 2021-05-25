@@ -96,21 +96,24 @@ body {
 .content--item + .content--item {
   margin-left: 30px;
 }
+
 .content--item {
   width: 50%;
 }
-.button {
-  padding: 12px 24px;
-  text-transform: uppercase;
-  background-color: #fe8a02;
-  border: none;
-  margin-top: 30px;
-}
+
 .button a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  background-color: #fe8a02;
+  border: none;
 }
+.header--button {
+  margin-top: 30px;
+}
+
 .section {
   width: 100%;
   padding: 100px 0;
@@ -261,4 +264,97 @@ body {
   color: #b09a81;
 
   background-color: #fff;
+}
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 38px 55px 40px 55px;
+
+  color: #fff;
+
+  background-color: #42413c;
+}
+.subscription__title {
+  width: 50%;
+}
+.subscription__email {
+  width: 50%;
+
+  font-weight: normal;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+
+  line-height: 160%;
+}
+.subscription__item {
+  display: flex;
+  align-items: stretch;
+
+  width: 100%;
+
+  margin-top: 9px;
+}
+.subscription__input {
+  width: calc(100% - 70px);
+  max-width: 394px;
+  height: 50px;
+
+  padding: 15px;
+
+  font-size: 16px;
+
+  line-height: 50px;
+
+  border: none;
+}
+.subscription__input::-webkit-input-placeholder {
+  color: #757575;
+
+  font-size: 13.1px;
+
+  opacity: 0.2;
+}
+
+.button--form {
+  position: relative;
+  height: 50px;
+  width: 70px;
+}
+
+.button--form::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../images/send.svg");
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+
+  content: "";
+}
+.subscription__rules {
+  margin: 0;
+
+  font-size: 12px;
+}
+.subscription__rules a {
+  color: #fff;
+}
+.copyright {
+  width: 100%;
+  margin-top: 60px;
+
+  text-align: center;
+}
+
+.copyright__link {
+  color: #1085c5;
 }
