@@ -1,5 +1,10 @@
 * {
-  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 h1,
@@ -26,6 +31,7 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.6em;
+  margin: 0;
 }
 .header {
   position: relative;
@@ -123,11 +129,8 @@ body {
   text-align: center;
 }
 
-.definition__title {
-  margin-bottom: 30px;
-}
 .definition__subtitle {
-  margin-bottom: 30px;
+  margin: 30px auto;
 }
 .definition__video {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
