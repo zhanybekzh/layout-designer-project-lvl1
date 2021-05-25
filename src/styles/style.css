@@ -193,6 +193,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.section--brown .distortion__header {
+  flex-direction: row-reverse;
+}
 .distortion__image {
   z-index: 1;
 
@@ -200,6 +203,10 @@ body {
 }
 .distortion__image + .distortion__inner {
   margin-left: 30px;
+}
+.section--brown .distortion__image + .distortion__inner {
+  margin-right: 30px;
+  margin-left: 0;
 }
 .distortion__suptitle {
   margin: 0;
@@ -216,6 +223,10 @@ body {
   font-family: "Neucha", cursive;
   line-height: 41px;
 }
+.section--brown .distortion__description {
+  color: #fff;
+}
+
 .distortion__content {
   display: flex;
   flex-wrap: wrap;
@@ -245,4 +256,9 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+.section--brown .distortion__divider {
+  color: #b09a81;
+
+  background-color: #fff;
 }
